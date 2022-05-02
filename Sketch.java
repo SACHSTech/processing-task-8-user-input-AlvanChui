@@ -75,6 +75,15 @@ public class Sketch extends PApplet {
       leftPressed = true;
     else if (keyCode == RIGHT)
       rightPressed = true;
+    
+    else if (key == 'w')
+      upPressed = true;
+    else if (key == 's')
+      downPressed = true;
+    else if (key == 'a')
+      leftPressed = true;
+    else if (key == 'd')
+      rightPressed = true;  
   }
   
   public void keyReleased() {
@@ -86,6 +95,15 @@ public class Sketch extends PApplet {
       leftPressed = false;
     else if (keyCode == RIGHT)
       rightPressed = false;
+
+    else if (key == 'w')
+      upPressed = false;
+    else if (key == 's')
+      downPressed = false;
+    else if (key == 'a')
+      leftPressed = false;
+    else if (key == 'd')
+      rightPressed = false; 
   }
 
   public void setbackground(){
